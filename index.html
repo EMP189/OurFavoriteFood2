@@ -7,6 +7,57 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <style>
+           .grid-item{
+                border:1px solid black;
+                background-color:gray;
+                padding:20px;
+                font-size: 20px;
+                text-align: center;
+                }
+            
+           .csscolumn {
+            -webkit-column-count: 3;  /* Chrome, Safari, Opera */
+            -moz-column-count: 3;     /* Firefox */
+            column-count: 2;
+            }
+
+            /* styling for this demo */
+            .csscolumn {
+            width: 100%;
+            }
+            .csscolumn + .csscolumn {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid;
+            }
+            body{
+                background-color: yellow;
+            }
+            @media only screen and (max-width:600px){
+                body{
+                background-color: pink;
+                
+                
+                }
+
+                
+                .csscolumn{
+                    -webkit-column-count: 3;  /* Chrome, Safari, Opera */
+                    -moz-column-count: 3;     /* Firefox */
+                    column-count: 1; 
+                }
+                p{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 300px;
+                    color: violet;
+                    
+                }
+            }
+
+            
+        </style>
     </head>
     <body>
         <div class="container"> 
@@ -21,6 +72,8 @@
                     <a class="nav-link" data-toggle="tab" href="#places">Try Someone's Burgers</a>
                 </li>
             </ul>
+
+            
 
             <!-- Tab Panes -->
             <div class="tab-content">
@@ -58,18 +111,17 @@
             
                 <div id="ingredients" class="container tab-pane fade">
                     <h3>Ingredients & Recipes</h3>
-                    <div>
-                        <ul> Ingredients
+                    <div class="csscolumn">
+                        <div class="grid-item"><ul> Ingredients
                             <li>1 small onion, diced</li>
                             <li>500g good-quality beef mince</li>
                             <li>1 egg</li>
                             <li>1 tbsp vegetable oil</li>
                             <li>4 burger buns</li>
                             <li>All or any of the following to serve: sliced tomato, beetroot, horseradish sauce, mayonnaise, ketchup, handful iceberg lettuce, rocket, watercress</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ol>Recipe
+                        </ul></div>
+                        <div class="grid-item">
+                             <ol>Recipe
                             <li>Tip 500g beef mince into a bowl with 1 small diced onion and 1 egg, then mix.</li>
                             <li>Divide the mixture into four. Lightly wet your hands. Carefully roll the mixture into balls, each about the size of a tennis ball.</li>
                             <li>Set in the palm of your hand and gently squeeze down to flatten into patties about 3cm thick. Make sure all the burgers are the same thickness so that they will cook evenly.</li>
@@ -80,8 +132,8 @@
                             <li>Cook for 5 mins more for medium. If you like your burgers pink in the middle, cook 1 min less each side. For well done, cook 1 min more.</li>
                             <li>Take the burgers off the barbecue. Leave to rest on a plate so that all the juices can settle inside.</li>
                             <li>Slice four burger buns in half. Place, cut-side down, on the barbecue rack and toast for 1 min until they are lightly charred. Place a burger inside each bun, then top with your choice of accompaniment.</li>
-                        </ol>
-                    </div>
+                        </ol></div>
+                
                 </div>
             
 
