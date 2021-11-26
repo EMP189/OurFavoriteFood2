@@ -8,7 +8,7 @@ body{
     background-color: chocolate;
 }
 
-.text-bg{
+.text-bg, .nav-tabs{
     text-align: center;
     background-color: white;
     width: fit-content;
