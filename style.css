@@ -1,6 +1,6 @@
 
 #home{
-    background-color: ;
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
@@ -8,6 +8,13 @@ body{
     background-color: chocolate;
 }
 
+.text-bg, .nav-tabs{
+    text-align: center;
+    background-color: white;
+    width: fit-content;
+    border-radius: 5px;
+    
+}
 
 #first{
     background-color: #B748B7;
